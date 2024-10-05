@@ -32,6 +32,7 @@ const TABS = {
             { id: "Stars", unl() { return STARS.unlocked() }, style: "sn" },
             { id: "Indescribable Matter", unl() { return quUnl() }, style: "qu" },
             { id: "The Parallel", unl() { return hasInfUpgrade(9) }, style: "inf" },
+            { id: "Modificators", unl() { return hasElement(291) },
         ],
         1: [
             { id: "Ranks Rewards" },
@@ -79,7 +80,6 @@ const TABS = {
             { id: "Core Effect" },
             { id: "Infinity Upgrades", style: "inf" },
             { id: "Corrupted Star", unl() { return tmp.CS_unl } },
-            { id: "Modificators", unl() { return hasElement(291) } },
         ],
         9: [
             { id: "Options" },
