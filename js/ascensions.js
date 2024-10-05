@@ -1,7 +1,7 @@
 const ASCENSIONS = {
-    names: ['ascension','transcension'],
-    fullNames: ["Ascension",'Transcension'],
-    resetName: ['Ascend','Transcend'],
+    names: ['ascension','transcension','recursion'],
+    fullNames: ["Ascension",'Transcension','Recursion'],
+    resetName: ['Ascend','Transcend','Recurse'],
     baseExponent() {
         let x = theoremEff('mass',5,0)
 
@@ -57,6 +57,9 @@ const ASCENSIONS = {
             case 1:
                 if (y.gte(6)) x = y.sub(6).div(2).root(1.1).scaleEvery('ascension1',true).mul(fp).add(1)
                 break;
+	    case 2:
+	        if (y.gte(13)) x = y.sub(5).div(1.91).root(1.0918).scaleEvery('ascension2',true).mul(fp).add(1)
+		break;
             default:
                 x = E(0)
                 break;
@@ -73,11 +76,13 @@ const ASCENSIONS = {
     ],
     noReset: [
         ()=>hasElement(267),
-        ()=>false,
+        ()=>player.ascensions[2].gte(1),
+	()=>false,
     ],
     autoUnl: [
         ()=>hasElement(267),
-        ()=>false,
+        ()=>player.ascensions[2].gte(1),
+	()=>false,
     ],
     autoSwitch(x) { player.auto_asc[x] = !player.auto_asc[x] },
     rewards: [
@@ -100,7 +105,9 @@ const ASCENSIONS = {
             4: `Meta-Prestige Level starts 2x later.`,
             7: `MCF tier requirements are reduced by 10%.`,
             9: `Increase prestige tiers exponent for ascension base by +0.333.`,
-        },
+        },{
+	    1: `Unlock Auto-Transcension, Transcension no longer reset, x10 Infinity Points.`
+	},
     ],
     rewardEff: [
         {
