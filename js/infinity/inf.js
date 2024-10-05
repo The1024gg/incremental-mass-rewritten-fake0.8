@@ -391,6 +391,29 @@ const INF = {
             return x.div(10)//.softcap(10,0.5,0)
         },
     },
+    nm_base: {
+        gain() {
+            if (!hasElement(291)) return E(0)
+            let x = tmp.nmEffect.eff||E(1)
+            if (hasOrbUpg(2)) x = x.mul(tmp.nm_base_boost)
+            return x
+        },
+        effect() {
+            let x = player.inf.nm_base.add(1).log(15).div(300).softcap(tmp.nm_base_soft,0.1,0)
+
+            return x//.softcap(10,0.5,0)
+        },
+        soft() {
+            let soft = E(0.15)
+            if (hasElement(32,1)) soft = soft.add(muElemEff(32))
+            if (hasElement(293)) soft = soft.add(0.3)
+            if (hasElement(295)) soft = soft.add(0.01)
+            return soft
+        },
+        boost() {
+            let x = E(1)
+        },
+    },
     pe: {
         cost(i) { return Decimal.pow(1.2,i.scaleEvery('pe')).mul(1000).floor() },
         can() { return player.inf.points.gte(tmp.peCost) },
@@ -661,6 +684,7 @@ function updateInfHTML() {
             }
         }
         else if (tmp.stab[8] == 3) updateCSHTML()
+	else if (tmp.stab[8] == 4) updateMDHTML()
     }
 }
 
