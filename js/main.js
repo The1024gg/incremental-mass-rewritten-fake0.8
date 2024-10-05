@@ -740,7 +740,7 @@ function format(ex, acc=4, max=12, type=player.options.notation) {
 
 function turnOffline() { player.offline.active = !player.offline.active }
 
-const ARV = ['mlt','mgv','giv','tev','pev','exv','zev','yov','rnv','quv','xev','wkv','vev','udv','trv','srv','riv','qxv','ppv','ocv','nev','miv','luv','kev,'jrv','iqv','huv','gav','fev','env','dsv','cev','bev','avv']
+const ARV = ['mlt','mgv','giv','tev','pev','exv','zev','yov','rnv','quv','xev','wkv','vev','udv','trv','srv','riv','qxv','ppv','ocv','nev','miv','luv','kev','jrv','iqv','huv','gav','fev','env','dsv','cev','bev','avv']
 
 function formatMass(ex) {
     let md = player.options.massDis
