@@ -647,11 +647,11 @@ const CHALS = {
         unl() { return hasElement(290) },
         title: "The Reality III",
         desc: "You are trapped in C1-19 and dark run with 1500 all glyphs. Theorems in the Core don't work. This challenge resets main upgrades.",
-        reward: `???.<br><span class="yellow">On first completion, unlock ???.</span>`,
-        max: E(100),
+        reward: `???.<br><span class="yellow">On first completion, unlock more elements.</span>`,
+        max: E(1),
         inc: E(10),
         pow: E(1.25),
-        start: EINF,
+        start: E('ee100000'),
         effect(x) {
             let ret = E(1)
             return ret
