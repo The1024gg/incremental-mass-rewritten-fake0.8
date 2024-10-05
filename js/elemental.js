@@ -1650,6 +1650,14 @@ const ELEMENTS = {
 	},{
 	    desc: `Add 100 more C17 completions.`,
 	    cost: E('ee105000'),
+	},{
+	    c16: true,
+	    desc: `Raise Overpower effect by +0.15.`,
+            cost: E('e35850'),
+	},{
+	    inf: true,
+	    desc: `Unlock Recursion.`,
+	    cost: E('1e313'),
 	},
     ],
     /*
