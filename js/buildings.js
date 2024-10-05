@@ -208,6 +208,8 @@ const BUILDINGS_DATA = {
 
             if (hasUpgrade('rp',19)) step = step.mul(upgEffect(1,19,0))
 
+	    if (hasElement(293)) step = step.add(0.15)
+
             let ss = E(10)
 
             let eff = step.mul(xx).add(1).softcap(ss,0.5,0)
