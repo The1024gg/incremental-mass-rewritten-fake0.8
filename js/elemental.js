@@ -1645,11 +1645,11 @@ const ELEMENTS = {
             desc: `Unlock 20th Challenge.`,
             cost: E(Number.MAX_VALUE),
         },{
-	    desc: `Placeholder.`,
-	    cost: EINF,
+	    desc: `Unlock Modificators.`,
+	    cost: E('ee104000'),
 	},{
-	    desc: `Placeholder.`,
-	    cost: EINF,
+	    desc: `Add 100 more C17 completions.`,
+	    cost: E('ee105000'),
 	},
     ],
     /*
@@ -1702,7 +1702,7 @@ const ELEMENTS = {
         if (tmp.ascensions_unl) u += 9
         if (tmp.CS_unl) u += 7
         if (tmp.c18reward) u += 12
-        if (tmp.fifthRowUnl) u += 20
+        if (tmp.fifthRowUnl) u += 22
 
         return u
     },
