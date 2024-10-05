@@ -661,7 +661,6 @@ function updateInfHTML() {
             }
         }
         else if (tmp.stab[8] == 3) updateCSHTML()
-	else if (tmp.stab[8] == 4) updateMDHTML()
     }
 }
 
