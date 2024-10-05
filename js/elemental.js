@@ -33,7 +33,7 @@ const ELEMENTS = {
         'Thallium','Lead','Bismuth','Polonium','Astatine','Radon','Francium','Radium','Actinium','Thorium',
         'Protactinium','Uranium','Neptunium','Plutonium','Americium','Curium','Berkelium','Californium','Einsteinium','Fermium',
         'Mendelevium','Nobelium','Lawrencium','Rutherfordium','Dubnium','Seaborgium','Bohrium','Hassium','Meitnerium','Darmstadium',
-        'Roeritgenium','Copernicium','Nihonium','Flerovium','Moscovium','Livermorium','Tennessine','Oganesson'
+        'Roentgenium','Copernicium','Nihonium','Flerovium','Moscovium','Livermorium','Tennessine','Oganesson'
     ],
     canBuy(x) {
         if (tmp.c16active && isElemCorrupted(x)) return false
@@ -1644,7 +1644,13 @@ const ELEMENTS = {
             inf: true,
             desc: `Unlock 20th Challenge.`,
             cost: E(Number.MAX_VALUE),
-        },
+        },{
+	    desc: `Placeholder.`,
+	    cost: E('10^^1e308'),
+	},{
+	    desc: `Placeholder.`,
+	    cost: E('10^^1e308'),
+	},
     ],
     /*
     {
