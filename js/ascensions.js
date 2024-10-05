@@ -107,7 +107,7 @@ const ASCENSIONS = {
             7: `MCF tier requirements are reduced by 10%.`,
             9: `Increase prestige tiers exponent for ascension base by +0.333.`,
         },{
-	    1: `Unlock Auto-Transcension, Transcension no longer reset, ^1.01 quarks.`
+	    1: `Unlock Auto-Transcension, Transcension no longer reset, ^1.01 quarks.`,
 	},
     ],
     rewardEff: [
