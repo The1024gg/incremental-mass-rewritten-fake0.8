@@ -427,6 +427,7 @@ function updateTemp() {
     tmp.c18reward = player.chal.comps[18].gte(4)
     tmp.fifthRowUnl = hasElement(270)
     tmp.MD_unl = hasElement(291)
+    tmp.c20reward = player.chal.comps[20].gte(1)
 
     tmp.SN_passive = hasElement(36,1)
 
