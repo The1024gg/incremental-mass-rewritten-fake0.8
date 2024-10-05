@@ -1703,6 +1703,7 @@ const ELEMENTS = {
         if (tmp.CS_unl) u += 7
         if (tmp.c18reward) u += 12
         if (tmp.fifthRowUnl) u += 22
+	if (tmp.c20reward) u += 8
 
         return u
     },
