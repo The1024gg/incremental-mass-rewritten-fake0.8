@@ -42,6 +42,9 @@ const ASCENSIONS = {
             case 1:
                 x = y.div(fp).scaleEvery('ascension1',false).pow(1.1).mul(2).add(6)
                 break;
+	    case 2:
+		x = y.div(fp).scaleEvery('ascension2',false).pow(1.0918).mul(1.91).add(2)
+		break;
             default:
                 x = EINF
                 break;
@@ -77,12 +80,12 @@ const ASCENSIONS = {
     ],
     noReset: [
         ()=>hasElement(267),
-        ()=>player.ascensions[2].gte(1),
+        ()=>hasAscension(2,1),
 	()=>false,
     ],
     autoUnl: [
         ()=>hasElement(267),
-        ()=>player.ascensions[2].gte(1),
+        ()=>hasAscension(2,1),
 	()=>false,
     ],
     autoSwitch(x) { player.auto_asc[x] = !player.auto_asc[x] },
