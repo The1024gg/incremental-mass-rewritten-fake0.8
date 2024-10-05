@@ -32,7 +32,6 @@ const TABS = {
             { id: "Stars", unl() { return STARS.unlocked() }, style: "sn" },
             { id: "Indescribable Matter", unl() { return quUnl() }, style: "qu" },
             { id: "The Parallel", unl() { return hasInfUpgrade(9) }, style: "inf" },
-            { id: "Modificators", unl() { return tmp.MD_unl },
         ],
         1: [
             { id: "Ranks Rewards" },
