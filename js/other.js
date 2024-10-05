@@ -80,6 +80,7 @@ const POPUP_GROUPS = {
             <button class="btn" style="font-family: 'Roboto Mono';" onclick="player.options.font = 'Roboto Mono'">Roboto Mono</button>
             <button class="btn" style="font-family: 'Source Sans Pro';" onclick="player.options.font = 'Source Sans Pro'">Source Sans Pro</button>
             <button class="btn" style="font-family: 'Source Serif Pro';" onclick="player.options.font = 'Source Serif Pro'">Source Serif Pro</button>
+            <button class="btn" style="font-family: 'Ubuntu';" onclick="player.options.font = 'Ubuntu'">Ubuntu</button>
             <button class="btn" style="font-family: Verdana, Geneva, Tahoma, sans-serif;" onclick="player.options.font = 'Verdana, Geneva, Tahoma, sans-serif'">Verdana</button>
         `,
     },
