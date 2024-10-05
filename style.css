@@ -109,6 +109,12 @@
 	size-adjust: 90%;
 }
 
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('fonts/ubuntu.ttf');
+	size-adjust: 110%;
+}
+
 * {
 	font-family: var(--font);
     table-align: center;
