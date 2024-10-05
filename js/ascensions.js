@@ -73,6 +73,7 @@ const ASCENSIONS = {
     unl: [
         ()=>true,
         ()=>tmp.c18reward,
+	()=>hasElement(294),
     ],
     noReset: [
         ()=>hasElement(267),
