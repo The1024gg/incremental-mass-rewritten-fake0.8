@@ -1646,10 +1646,10 @@ const ELEMENTS = {
             cost: E(Number.MAX_VALUE),
         },{
 	    desc: `Placeholder.`,
-	    cost: E('10^^1e308'),
+	    cost: EINF,
 	},{
 	    desc: `Placeholder.`,
-	    cost: E('10^^1e308'),
+	    cost: EINF,
 	},
     ],
     /*
