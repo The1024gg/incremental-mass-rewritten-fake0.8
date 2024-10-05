@@ -651,7 +651,7 @@ const CHALS = {
         max: E(1),
         inc: E(10),
         pow: E(1.25),
-        start: E('ee100000'),
+        start: E('e2.7e25'),
         effect(x) {
             let ret = E(1)
             return ret
