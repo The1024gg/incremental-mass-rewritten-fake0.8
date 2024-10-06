@@ -1,7 +1,7 @@
 const ASCENSIONS = {
-    names: ['ascension','transcension','recursion'],
-    fullNames: ["Ascension",'Transcension','Recursion'],
-    resetName: ['Ascend','Transcend','Recursive'],
+    names: ['ascension','transcension'],
+    fullNames: ["Ascension",'Transcension'],
+    resetName: ['Ascend','Transcend'],
     baseExponent() {
         let x = theoremEff('mass',5,0)
 
@@ -76,16 +76,13 @@ const ASCENSIONS = {
     unl: [
         ()=>true,
         ()=>tmp.c18reward,
-	()=>hasElement(294),
     ],
     noReset: [
         ()=>hasElement(267),
-        ()=>hasAscension(2,1),
-	()=>false,
+        ()=>false,
     ],
     autoUnl: [
         ()=>hasElement(267),
-        ()=>hasAscension(2,1),
 	()=>false,
     ],
     autoSwitch(x) { player.auto_asc[x] = !player.auto_asc[x] },
@@ -109,8 +106,7 @@ const ASCENSIONS = {
             4: `Meta-Prestige Level starts 2x later.`,
             7: `MCF tier requirements are reduced by 10%.`,
             9: `Increase prestige tiers exponent for ascension base by +0.333.`,
-        },{
-	    1: `Unlock Auto-Transcension, Transcension no longer reset, ^1.01 quarks.`,
+	
 	},
     ],
     rewardEff: [
