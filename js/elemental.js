@@ -1645,7 +1645,7 @@ const ELEMENTS = {
             desc: `Unlock 20th Challenge.`,
             cost: E(Number.MAX_VALUE),
         },{
-	    desc: `Unlock Modificators.`,
+	    desc: ``,
 	    cost: E('ee104000'),
 	},{
 	    desc: `Add 100 more C17 completions.`,
@@ -1656,9 +1656,12 @@ const ELEMENTS = {
             cost: E('e35850'),
 	},{
 	    inf: true,
-	    desc: `Unlock Recursion.`,
+	    desc: `Unlock one atom upgrade.`,
 	    cost: E('1e313'),
-	},
+	},{
+	    desc: `Unlock 9th star in stars tab.`,
+	    cost: E('1e105100')
+	}
     ],
     /*
     {
