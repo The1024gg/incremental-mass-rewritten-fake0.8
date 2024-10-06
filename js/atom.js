@@ -35,7 +35,6 @@ const ATOM = {
         if (hasElement(67)) x = hasElement(236) ? x.pow(elemEffect(67)) : x.mul(tmp.elements.effect[67])
         if (hasElement(47)) x = x.pow(1.1)
         if (hasPrestige(1,7)) x = x.pow(prestigeEff(1,7))
-	if (hasAscension(2,1)) x = x.pow(1.01)
 
         if (hasUpgrade('atom',17)) x = x.pow(upgEffect(3,17))
 
