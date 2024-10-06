@@ -42,9 +42,6 @@ const ASCENSIONS = {
             case 1:
                 x = y.div(fp).scaleEvery('ascension1',false).pow(1.1).mul(2).add(6)
                 break;
-	    case 2:
-		x = y.div(fp).scaleEvery('ascension2',false).pow(1.0918).mul(1.91).add(2)
-		break;
             default:
                 x = EINF
                 break;
@@ -60,9 +57,6 @@ const ASCENSIONS = {
             case 1:
                 if (y.gte(6)) x = y.sub(6).div(2).root(1.1).scaleEvery('ascension1',true).mul(fp).add(1)
                 break;
-	    case 2:
-	        if (y.gte(13)) x = y.sub(5).div(1.91).root(1.0918).scaleEvery('ascension2',true).mul(fp).add(1)
-		break;
             default:
                 x = E(0)
                 break;
